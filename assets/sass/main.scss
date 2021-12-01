@@ -1,0 +1,19 @@
+@import "./shared/variables";
+@import "./shared/global";
+@import "./shared/media-mixin";
+
+// // pages
+// @import "./pages/pagex";
+
+// // components
+// @import "./components/layout/navbar";
+// @import "./components/layout/footer";
+
+.main {
+  background: blue;
+}
+@include to-mobile-sm {
+  .main {
+    background: #000;
+  }
+}
