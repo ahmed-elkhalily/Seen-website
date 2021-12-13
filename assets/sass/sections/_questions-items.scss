@@ -1,0 +1,59 @@
+.questions-page {
+  .questions__items {
+    .questions-item {
+      background: $white-blue;
+      padding: 1.25rem;
+      border-radius: 15px;
+      margin-bottom: 1.25rem;
+      h5 {
+        color: $gray9f;
+        font-size: 1.25rem;
+      }
+      & > p {
+        font-size: 1.19rem;
+        color: $gray70;
+      }
+      form {
+        margin-top: 1rem;
+        label {
+          font-size: 1.25rem;
+          color: $gray9f;
+          &:active {
+            color: $gray70;
+          }
+        }
+      }
+    }
+  }
+  button.questions__button-show {
+    width: 100%;
+    border: none;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    background: $red;
+    color: white;
+    font-size: 2rem;
+    img {
+      margin-right: 1rem;
+    }
+  }
+}
+
+@include to-tablet-sm {
+  .questions-page {
+    .questions__items .questions-item {
+      p,
+      h5,
+      form label {
+        font-size: 1rem;
+      }
+    }
+    button.questions__button-show {
+      font-size: 1.5rem;
+      padding: 0.5rem 0;
+      img {
+        width: 1.25rem;
+      }
+    }
+  }
+}

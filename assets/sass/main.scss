@@ -1,19 +1,8 @@
-@import "./shared/variables";
-@import "./shared/global";
-@import "./shared/media-mixin";
-
-// // pages
-// @import "./pages/pagex";
-
-// // components
-// @import "./components/layout/navbar";
-// @import "./components/layout/footer";
-
-.main {
-  background: blue;
-}
-@include to-mobile-sm {
-  .main {
-    background: #000;
-  }
-}
+@import "./shared/shared";
+// sections
+@import "./components/progress";
+// components
+@import "./components/header";
+@import "./components/best-student";
+@import "./components/subjects";
+@import "./components/my-courses";

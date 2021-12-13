@@ -1,0 +1,30 @@
+header.main-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.875rem;
+  span {
+    display: block;
+    width: 150px;
+    height: 1px;
+    margin-left: 1.875rem;
+    background: $gray70;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 1.875rem;
+    color: $gray70;
+  }
+}
+
+@include mobile-xs {
+  header.main-header {
+    margin-bottom: 2rem;
+    h2 {
+      font-size: 1.5rem;
+    }
+    span {
+      width: 80px;
+      margin-left: 1rem;
+    }
+  }
+}

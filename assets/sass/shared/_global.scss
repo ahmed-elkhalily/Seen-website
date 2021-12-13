@@ -1,3 +1,44 @@
+/* Start Global */
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: Dubai;
+  src: url("/assets/fonts/ArbFONTS-Dubai-Regular.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Dubai;
+  src: url("/assets/fonts/ArbFONTS-Dubai-Bold.ttf");
+  font-weight: bold;
+}
+body {
+  font-family: Dubai;
+}
+p {
+  margin-bottom: 0 !important;
+}
+li,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* End Global */
+
+/*Start */
+section.sec {
+  margin: 6.25rem 0;
+}
+@include mobile-xs {
+  .slider-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@include mobile-sm {
+  .slider-wrapper {
+    width: 90%;
+  }
+}
+/*End */
