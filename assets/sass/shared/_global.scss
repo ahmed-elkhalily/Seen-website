@@ -1,19 +1,25 @@
 /* Start Global */
 * {
   box-sizing: border-box;
+  &:focus,
+  &:active,
+  &:checked {
+    outline: 0 !important;
+    box-shadow: none !important;
+  }
 }
 @font-face {
-  font-family: Dubai;
-  src: url("/assets/fonts/ArbFONTS-Dubai-Regular.otf");
+  font-family: Cairo;
+  src: url("/assets/fonts/Cairo-Regular.ttf");
   font-weight: normal;
 }
 @font-face {
-  font-family: Dubai;
-  src: url("/assets/fonts/ArbFONTS-Dubai-Bold.ttf");
+  font-family: Cairo;
+  src: url("/assets/fonts/Cairo-Bold.ttf");
   font-weight: bold;
 }
 body {
-  font-family: Dubai;
+  font-family: Cairo;
 }
 p {
   margin-bottom: 0 !important;
@@ -24,11 +30,44 @@ ul {
   padding: 0;
   margin: 0;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: inherit;
+  }
+}
+button.btn:hover,
+button.btn {
+  color: white;
+}
+.primary-color {
+  color: $primary;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  font-size: 1.25rem;
+  color: $main-color;
+}
+p {
+  font-size: 1rem;
+  color: $text-color;
+}
 /* End Global */
 
-/*Start */
+/*Start main-components */
+
 section.sec {
   margin: 6.25rem 0;
+}
+
+.scrollToTop {
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  display: none;
 }
 @include mobile-xs {
   .slider-wrapper {

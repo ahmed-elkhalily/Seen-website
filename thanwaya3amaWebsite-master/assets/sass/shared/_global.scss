@@ -1,0 +1,51 @@
+/* Start Global */
+* {
+    box-sizing: border-box;
+    &:focus,
+    &:active,
+    &:checked {
+        outline: 0 !important;
+        box-shadow: none !important;
+    }
+}
+@font-face {
+    font-family: Dubai;
+    src: url("../../fonts/ArbFONTS-Dubai-Regular.otf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: Dubai;
+    src: url("../../fonts/ArbFONTS-Dubai-Bold.ttf");
+    font-weight: bold;
+}
+body {
+    font-family: Dubai;
+}
+p {
+    margin-bottom: 0 !important;
+}
+li,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        color: inherit;
+    }
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    font-size: 1.25rem;
+    color: $main-color;
+}
+p {
+    font-size: 1rem;
+    color: $text-color;
+}
+/* End Global */

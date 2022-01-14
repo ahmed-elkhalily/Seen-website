@@ -1,0 +1,92 @@
+/* Start Global */
+* {
+  box-sizing: border-box; }
+  *:focus, *:active, *:checked {
+    outline: 0 !important;
+    box-shadow: none !important; }
+
+@font-face {
+  font-family: Dubai;
+  src: url("../../fonts/ArbFONTS-Dubai-Regular.otf");
+  font-weight: normal; }
+
+@font-face {
+  font-family: Dubai;
+  src: url("../../fonts/ArbFONTS-Dubai-Bold.ttf");
+  font-weight: bold; }
+
+body {
+  font-family: Dubai; }
+
+p {
+  margin-bottom: 0 !important; }
+
+li,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+  a:hover {
+    color: inherit; }
+
+h2 {
+  text-align: center; }
+
+h3 {
+  font-size: 1.25rem;
+  color: #145da0; }
+
+p {
+  font-size: 1rem;
+  color: #868b8e; }
+
+/* End Global */
+.slider .slider__item .slider__item__card figure {
+  width: 100%; }
+  .slider .slider__item .slider__item__card figure img {
+    width: 60%;
+    margin: auto; }
+
+.school__classes {
+  padding: 120px 0; }
+  .school__classes h2 {
+    color: #0c2d48; }
+  .school__classes .school__classes__items .school__classes__item {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 20px;
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    margin-top: 1.5rem; }
+    .school__classes .school__classes__items .school__classes__item:hover {
+      background-color: #e7f2f8; }
+    .school__classes .school__classes__items .school__classes__item [class*="col-"] {
+      margin-bottom: -99999px;
+      padding-bottom: 99999px; }
+    .school__classes .school__classes__items .school__classes__item h3 {
+      text-align: center; }
+    .school__classes .school__classes__items .school__classes__item p {
+      text-align: center; }
+
+.uniquely__content {
+  height: 97%;
+  border-radius: 0.5rem;
+  overflow: hidden; }
+
+.uniquely__items .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  border-radius: 10px;
+  min-height: 280px; }
+  .uniquely__items .item img {
+    width: 35%;
+    margin-bottom: 2rem; }

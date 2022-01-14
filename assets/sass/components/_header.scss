@@ -1,18 +1,18 @@
 header.main-header {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  justify-content: center;
   margin-bottom: 2.875rem;
   span {
-    display: block;
-    width: 150px;
-    height: 1px;
-    margin-left: 1.875rem;
-    background: $gray70;
+    width: 1.5rem;
+    height: 0.25rem;
+    background: $primary;
+    margin-inline-end: 0.5rem;
   }
   h2 {
     font-weight: bold;
-    font-size: 1.875rem;
-    color: $gray70;
+    font-size: 2.5rem;
+    color: #636363;
   }
 }
 
@@ -23,7 +23,6 @@ header.main-header {
       font-size: 1.5rem;
     }
     span {
-      width: 80px;
       margin-left: 1rem;
     }
   }

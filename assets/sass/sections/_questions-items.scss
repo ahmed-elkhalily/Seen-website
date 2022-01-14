@@ -14,12 +14,37 @@
         color: $gray70;
       }
       form {
+        padding: 1rem;
         margin-top: 1rem;
-        label {
-          font-size: 1.25rem;
-          color: $gray9f;
-          &:active {
+        border-top: 1px solid $border-gray;
+        input[type="radio"] {
+          display: none;
+          &:checked + label > .number {
+            background: #00bcd4;
+            color: white;
+          }
+          &:checked + label > span {
             color: $gray70;
+          }
+        }
+        div.radio-input-field {
+          margin-bottom: 1rem;
+        }
+        label.radio-input-label {
+          cursor: pointer;
+          .number {
+            color: white;
+            background: #dfe8f1;
+            line-height: 1;
+            text-align: center;
+            padding: 3px 10px;
+            border-radius: 5px;
+            margin-left: 1rem;
+          }
+          .answer {
+            color: $gray9f;
+            font-size: 1.25rem;
+            font-weight: 200;
           }
         }
       }
@@ -44,8 +69,13 @@
     .questions__items .questions-item {
       p,
       h5,
-      form label {
-        font-size: 1rem;
+      form {
+        .radio-input-label .answer {
+          font-size: 1rem !important;
+        }
+      }
+      form {
+        margin-top: 2rem;
       }
     }
     button.questions__button-show {

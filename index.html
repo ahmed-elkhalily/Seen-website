@@ -4,84 +4,254 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="./assets/images/public-images/logo.png"
-    />
-    <!-- <link rel="stylesheet" href="./assets/css/slick.css" />
-    <link rel="stylesheet" href="./assets/css/slick-theme.css" /> -->
-
-    <!-- styles -->
+    <title>ثانوية عامة</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.svg" />
+    <!-- main-styles -->
     <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css" />
-
-    <link rel="stylesheet" href="./assets/css/home-as-login.css" />
-    <title>Questions</title>
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/index.css" />
   </head>
   <body>
-    <!-- start questions page -->
-    <section class="questions-page">
+    <!-- start why-we -->
+    <section class="sec why-we">
       <div class="container">
-        <!-- start head -->
-        <section class="questions__head">
-          <header>
-            <h2>كتاب المعلم - مادة الجيولوجيا - الدرس الثالث</h2>
-            <p>
-              قم بالإجابة علي جميع الأسئلة للتمكن من مشاهدة الفيديو ( شرح نمازج
-              الحل بشكل موضح و مبسط)
-            </p>
-          </header>
-          <div class="my-progress-bar">
-            <div class="my-progress" style="width: 50%"></div>
+        <header class="main-header">
+          <span></span>
+          <h2>لماذا نحن ؟</h2>
+        </header>
+        <div class="row">
+          <div class="why-we__items">
+            <div class="row">
+              <div class="col-md-3">
+                <figure class="item">
+                  <img src="/assets/images/home/time.png" alt="save-time" />
+                  <figcaption>توفير الوقت</figcaption>
+                </figure>
+              </div>
+              <div class="col-md-3">
+                <figure class="item">
+                  <img src="/assets/images/home/money.png" alt="save-money" />
+                  <figcaption>توفير أموال</figcaption>
+                </figure>
+              </div>
+              <div class="col-md-3">
+                <figure class="item">
+                  <img
+                    src="/assets/images/home/remotly.png"
+                    alt="study remotly"
+                  />
+                  <figcaption>طريقة تدريس مميزة</figcaption>
+                </figure>
+              </div>
+              <div class="col-md-3">
+                <figure class="item">
+                  <img
+                    src="/assets/images/home/study.png"
+                    alt="study-remotly"
+                  />
+                  <figcaption>البعد عن الملل</figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
-          <p class="questions__numbers">
-            لقد قمت بالإجابة علي
-            <strong>6</strong>
-            من
-            <strong>20</strong>
-            سؤال
-          </p>
-        </section>
-        <!-- end head -->
-        <!-- start items -->
-        <section class="questions__items">
-          <div class="questions-item">
-            <h5>السؤال الأول</h5>
-            <p>
-              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-              سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات
-              في الصفحة التي يقرأها
-            </p>
-            <form>
-              <div>
-                <input type="radio" value="1" name="check2" />
-                <label for="chek1">السؤال الأول</label>
-              </div>
-              <div>
-                <input type="radio" value="1" name="check2" />
-                <label for="check2">السؤال الثالتي</label>
-              </div>
-              <div>
-                <input type="radio" value="1" name="check3" />
-                <label for="check3">السؤال الثالث</label>
-              </div>
-              <div>
-                <input type="radio" value="1" name="check4" />
-                <label for="check4">السؤال الرابع</label>
-              </div>
-            </form>
-          </div>
-        </section>
-        <!-- end items -->
-        <!-- start button -->
-        <button class="questions__button-show">
-          شاهد الحل
-          <img src="/assets/images/icons/show.svg" alt="show" />
-        </button>
-        <!-- end button -->
+        </div>
       </div>
     </section>
-    <!-- end questions page -->
+    <!-- end why-we -->
+    <!-- Start repeated-questions -->
+    <section class="sec repeat-questions">
+      <div class="container">
+        <header class="main-header">
+          <span></span>
+          <h2>أسئلة متكررة</h2>
+        </header>
+        <div class="repeat-questions__accordion">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  س : ماهو موقع سؤال ؟
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                  سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                  الفقرات في الصفحة التي يقرأها
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  س : ماهو موقع سؤال ؟
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                  سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                  الفقرات في الصفحة التي يقرأها
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading3">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse3"
+                  aria-expanded="false"
+                  aria-controls="flush-collapse3"
+                >
+                  س : ماهو موقع سؤال ؟
+                </button>
+              </h2>
+              <div
+                id="flush-collapse3"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-heading3"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                  سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                  الفقرات في الصفحة التي يقرأها
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading4">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse4"
+                  aria-expanded="false"
+                  aria-controls="flush-collapse4"
+                >
+                  س : ماهو موقع سؤال ؟
+                </button>
+              </h2>
+              <div
+                id="flush-collapse4"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-heading4"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                  سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                  الفقرات في الصفحة التي يقرأها
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading5">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse5"
+                  aria-expanded="false"
+                  aria-controls="flush-collapse5"
+                >
+                  س : ماهو موقع سؤال ؟
+                </button>
+              </h2>
+              <div
+                id="flush-collapse5"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-heading5"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                  سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                  الفقرات في الصفحة التي يقرأها
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End repeated-questions -->
+    <!-- start contact-us -->
+    <section class="sec contact-us">
+      <div class="container">
+        <header class="main-header">
+          <span></span>
+          <h2>تواصل معنا</h2>
+        </header>
+        <div class="row">
+          <div class="col-md-6">
+            <figure>
+              <img src="/assets/images/home/contact-us.png" alt="contact-us" />
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <form>
+              <input
+                class="form-control"
+                type="text"
+                name="name"
+                placeholder="أكتب أسمك"
+              />
+              <input
+                class="form-control"
+                type="text"
+                name="phone"
+                placeholder="رقم الموبيل"
+              />
+              <input
+                class="form-control"
+                name="email"
+                placeholder="البريد الإلكتروني"
+              />
+              <textarea
+                class="form-control"
+                name="message"
+                placeholder="سيب رسالتك هنا ..."
+                rows="3"
+              ></textarea>
+              <button type="submit" class="btn w-full">
+                إرسال
+                <img src="assets/images/home/arrow-left.svg" alt="" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end contact-us -->
     <!-- scripts -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
   </body>
 </html>
